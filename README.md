@@ -5,8 +5,7 @@
 
 ## 🌐 Webfeed - Dynamic RSS Feed Reader  
 
-![Webfeed Banner](https://via.placeholder.com/1000x300?text=Webfeed+RSS+Reader)  
-*(Replace the above image URL with a real banner if you have one.)*  
+![Webfeed Banner](https://github.com/GAURIPATIL-2004/Webfeed/blob/main/webfeed.png)  
 
 Webfeed is a simple **RSS Feed Reader** built with **HTML, JavaScript, and PHP**. It dynamically fetches RSS feeds from **Google News** and **ZDNet** using AJAX and displays the latest updates in real-time.  
 
