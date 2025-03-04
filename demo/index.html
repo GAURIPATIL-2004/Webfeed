@@ -1,5 +1,42 @@
 <html>
 <head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 50px;
+  }
+
+  form {
+    background: #fff;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #rssOutput {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
 <script>
 function showRSS(str) {
   if (str.length == 0) {
@@ -17,17 +54,21 @@ function showRSS(str) {
   xmlhttp.send();
 }
 </script>
+
 </head>
 <body>
 
+<h2> Webfeed - RSS Reader</h2>
+
 <form>
-  <select onchange="showRSS(this.value)">
-    <option value="">Select an RSS-feed:</option>
+  <label for="rssSelect"><b>Select an RSS-feed:</b></label>
+  <select id="rssSelect" onchange="showRSS(this.value)">
+    <option value="">-- Choose a Source --</option>
     <option value="Google">Google News</option>
     <option value="ZDN">ZDNet News</option>
   </select>
 </form>
-<br>
+
 <div id="rssOutput">RSS-feed will be listed here...</div>
 
 </body>
